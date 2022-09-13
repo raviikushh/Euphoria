@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Muzixx</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="script.js">
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+
+  <nav class="navbar navbar-expand-lg sticky-top bg-success ">
+    <div class="container-fluid">
+      <li class="me-auto">
+        <img src="img1.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+      </li>
+      <a class="navbar-brand ourlogo" href="index.html">Euphoria</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active pills1" aria-current="page" href="#"><span
+                class="badge rounded-pill text-bg-warning home">Home</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span class="badge rounded-pill text-bg-danger library">Your Library</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="badge rounded-pill text-bg-info playlists">Playlists</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Top 20 in India</a></li>
+              <li><a class="dropdown-item" href="#">Top Punjabi songs</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Best DJ Songs</a></li>
+            </ul>
+          </li>
+
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search a song" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+        <div class="mx-2"><button class="btn btn-warning" data-bs-toggle="modal"
+            data-bs-target="#loginModal">Login</button>
+          <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#signupModal">Signup</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- login-Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login to MyCodingHub</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--signup Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupModalLabel">Get an MyCodingHub account</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="row g-3">
+            <div class="col-md-4">
+              <label for="validationCustom01" class="form-label">First name</label>
+              <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustom02" class="form-label">Last name</label>
+              <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Password</label>
+              <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">City</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">State</label>
+              <select id="inputState" class="form-select">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-12">
+
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Create an account</button>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </nav>
+  <button type="button" class="btn btn-warning my-4 ">Popular Songs</button>
+  <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-3 mx-0">
+    <div class="col">
+      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+        style="background-image: url('unsplash-photo-1.jpg');">
+        <div class="d-flex flex-column h-100 p-3 pb-2 text-white text-shadow-1">
+          <img src="cover4.jpg" height="200px">
+
+          <h3 class="pt-3 mt-3 mb-4 display-6 lh-1 fw-bold">Har Har Sambhu</h3>
+          <p>Singer: Jeetu Sharma and Abhilipsa Panda</p>
+          <!-- progress Bar -->
+          <input type="range" name="range" id="myProgressBar4" min="0" value="0" max="100">
+          <ul class="d-flex list-unstyled mt-auto">
+            <li class="me-auto">
+              <img src="img1.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+            </li>
+            <div class="icons">
+              <i class="fas fa-3x fa-step-backward" id="previous"></i>
+              <i class="far fa-3x fa-play-circle" id="masterPlay4"></i>
+              <i class="fas fa-3x fa-step-forward" id="next"></i>
+            </div>
+            <li class="d-flex align-items-center me-3">
+              <img src="gif1.gif" alt="" id="gif4" width="50px">
+            </li>
+            <li class="d-flex align-items-center">
+              <svg class="bi me-2" width="1em" height="1em">
+                <use xlink:href="#calendar3"></use>
+              </svg>
+              <small>5:54</small>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+        style="background-image: url('unsplash-photo-2.jpg');">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+          <img src="cover2.jpg" class="cover2" alt="">
+          <h3 class="pt-2 mt-2 mb-4 display-6 lh-1 fw-bold">Mast Nazro Se</h3>
+          <p>Singer: Jubin Naitiyal</p>
+          <!-- progress Bar -->
+          <input type="range" name="range" id="myProgressBar2" min="0" value="0" max="100">
+          <ul class="d-flex list-unstyled mt-auto">
+            <li class="me-auto">
+              <img src="img1.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white ">
+            </li>
+            <div class="icons2">
+              <i class="fas fa-3x fa-step-backward" id="previous"></i>
+              <i class="far fa-3x fa-play-circle" id="masterPlay2"></i>
+              <i class="fas fa-3x fa-step-forward" id="next"></i>
+            </div>
+            <li class="d-flex align-items-center me-3">
+              <img src="gif1.gif" alt="" id="gif2" width="50px">
+            </li>
+            <li class="d-flex align-items-center">
+              <svg class="bi me-2" width="1em" height="1em">
+                <use xlink:href="#calendar3"></use>
+              </svg>
+              <small>4:49</small>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+        style="background-image: url('unsplash-photo-3.jpg');">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+          <img src="cover3.jpg" class="cover3" alt="">
+          <h3 class="pt-2 mt-2 mb-4 display-6 lh-1 fw-bold">Tu Hi Das De</h3>
+          <p>Singer: Simar Panag and Mickey Singh</p>
+          <!-- progress Bar -->
+          <input type="range" name="range" id="myProgressBar3" min="0" value="0" max="100">
+          <ul class="d-flex list-unstyled mt-auto">
+            <li class="me-auto">
+              <img src="img1.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+            </li>
+            <div class="icons3">
+              <i class="fas fa-3x fa-step-backward" id="previous"></i>
+              <i class="far fa-3x fa-play-circle " id="masterPlay3"></i>
+              <i class="fas fa-3x fa-step-forward" id="next"></i>
+            </div>
+            <li class="d-flex align-items-center me-3">
+              <img src="gif1.gif" alt="" id="gif3" width="50px">
+            </li>
+            <li class="d-flex align-items-center">
+              <svg class="bi me-2" width="1em" height="1em">
+                <use xlink:href="#calendar3"></use>
+              </svg>
+              <small>2:52</small>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-3 mx-0">
+    <div class="col">
+      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+        style="background-image: url('unsplash-photo-1.jpg');">
+        <div class="d-flex flex-column h-100 p-3 pb-2 text-white text-shadow-1">
+          <img src="cover1.jpg" height="200px">
+
+          <h3 class="pt-3 mt-3 mb-4 display-6 lh-1 fw-bold">Punjabiyan Di Dhee</h3>
+          <p>Singer: Guru Randhawa ft. Bohemia</p>
+          <!-- progress Bar -->
+          <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+          <ul class="d-flex list-unstyled mt-auto">
+            <li class="me-auto">
+              <img src="img1.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+            </li>
+
+            <!-- Will be used later... -->
+            <!-- <img src="play2.png" class="play2" alt="" id="masterPlay"> -->
+            <div class="icons">
+              <i class="fas fa-3x fa-step-backward" id="previous"></i>
+              <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+              <i class="fas fa-3x fa-step-forward" id="next"></i>
+            </div>
+            <li class="d-flex align-items-center me-3">
+              <img src="gif1.gif" alt="" id="gif" width="50px">
+            </li>
+            <li class="d-flex align-items-center">
+              <svg class="bi me-2" width="1em" height="1em">
+                <use xlink:href="#calendar3"></use>
+              </svg>
+              <small>3:13</small>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+        style="background-image: url('unsplash-photo-2.jpg');">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+          <img src="cover5.jpg" class="cover5" alt="">
+          <h3 class="pt-2 mt-2 mb-4 display-6 lh-1 fw-bold">Harleys In Hawaii</h3>
+          <p>Singer: 	Katty Perry</p>
+          <!-- progress Bar -->
+          <input type="range" name="range" id="myProgressBar5" min="0" value="0" max="100">
+          <ul class="d-flex list-unstyled mt-auto">
+            <li class="me-auto">
+              <img src="img1.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+            </li>
+            <div class="icons2">
+              <i class="fas fa-3x fa-step-backward" id="previous"></i>
+              <i class="far fa-3x fa-play-circle" id="masterPlay5"></i>
+              <i class="fas fa-3x fa-step-forward" id="next"></i>
+            </div>
+            <li class="d-flex align-items-center me-3">
+              <img src="gif1.gif" alt="" id="gif5" width="50px">
+            </li>
+            <li class="d-flex align-items-center">
+              <svg class="bi me-2" width="1em" height="1em">
+                <use xlink:href="#calendar3"></use>
+              </svg>
+              <small>3:14</small>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+        style="background-image: url('unsplash-photo-3.jpg');">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+          <img src="cover6.jpg" class="cover3" alt="">
+          <h3 class="pt-2 mt-2 mb-4 display-6 lh-1 fw-bold">Closer</h3>
+          <p>Singer: The Chainsmokers</p>
+          <!-- progress Bar -->
+          <input type="range" name="range" id="myProgressBar6" min="0" value="0" max="100">
+          <ul class="d-flex list-unstyled mt-auto">
+            <li class="me-auto">
+              <img src="img1.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+            </li>
+            <div class="icons3">
+              <i class="fas fa-3x fa-step-backward" id="previous"></i>
+              <i class="far fa-3x fa-play-circle " id="masterPlay6"></i>
+              <i class="fas fa-3x fa-step-forward" id="next"></i>
+            </div>
+            <li class="d-flex align-items-center me-3">
+              <img src="gif1.gif" alt="" id="gif6" width="50px">
+            </li>
+            <li class="d-flex align-items-center">
+              <svg class="bi me-2" width="1em" height="1em">
+                <use xlink:href="#calendar3"></use>
+              </svg>
+              <small>4:03</small>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
