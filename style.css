@@ -17,21 +17,22 @@ body{
 #gif{
     opacity: 0;
     transition: 0.4s ease-in;
+    margin-right: -20px;
 }
 #gif2{
     opacity: 0;
     transition: 0.4s ease-in;
-    margin-right: -30px;
+    margin-right: -40px;
 }
 #gif3{
     opacity: 0;
     transition: 0.4s ease-in;
-    margin-right:-40px;
+    margin-right:-0px;
 }
 #gif4{
     opacity: 0;
     transition: 0.4s ease-in;
-    
+     margin-right: -30px;
 }
 #gif5{
     opacity: 0;
@@ -41,7 +42,7 @@ body{
 #gif6{
     opacity: 0;
     transition: 0.4s ease-in;
-    margin-right: -40px;
+/*     margin-right: -40px; */
 }
 .home{
     width:80px;
@@ -68,25 +69,31 @@ body{
     margin-left: 70px;
 }
 .cover2{
-    margin-top: -30px;
-    margin-right: -25px;
-    margin-left: -25px;
+    /* margin-top: -30px; */
+    margin-right: -2px;
+    margin-left: -2px;
     height: 200px;
 }
 .cover3{
-    margin-top: -30px;
-    margin-right: -25px;
-    margin-left: -25px;
+    /* margin-top: -30px; */
+    margin-right: -2px;
+    margin-left: -2px;
     height: 200px;
 }
 .icons2{
-    margin-left:-10px;
+    margin-right: 40px;
 }
 .cover5{
-    margin-top: -30px;
-    margin-right: -25px;
-    margin-left: -25px;
-    height: 200px;  
+    /* margin-top: -30px; */
+    margin-right: -2px;
+    margin-left: -2px;
+    height: 220px;  
+}
+.cover6{
+    /* margin-top: -30px; */
+    margin-right: -2px;
+    margin-left: -2px;
+    height: 220px;  
 }
 .ourlogo{
     color:antiquewhite;
