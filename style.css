@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:rgb(14, 18, 20)
+}
+.pause{
+   margin-right: 90px;
+   margin-top: 10px;
+   width: 40px;
+   
+}
+.icons{
+    margin-right:20px;
+}
+#gif{
+    opacity: 0;
+    transition: 0.4s ease-in;
+   margin-right: -20px;
+}
+#gif2{
+    opacity: 0;
+    transition: 0.4s ease-in;
+    margin-right: -40px;
+   
+}
+#gif3{
+    opacity: 0;
+    transition: 0.4s ease-in;
+    margin-right:-0px;
+}
+#gif4{
+    opacity: 0;
+    transition: 0.4s ease-in;
+    margin-right: -30px;
+}
+#gif5{
+    opacity: 0;
+    transition: 0.4s ease-in;
+    margin-right: -40px;
+}
+#gif6{
+    opacity: 0;
+    transition: 0.4s ease-in;
+  
+}
+#gif7{
+    opacity: 0;
+    transition: 0.4s ease-in;
+    margin-right: -20px;
+}
+#gif8{
+    opacity: 0;
+    transition: 0.4s ease-in;
+    margin-right: -40px;
+}
+#gif9{
+    opacity: 0;
+    transition: 0.4s ease-in;
+   
+}
+#gif10{
+    opacity: 0;
+    transition: 0.4s ease-in;
+    margin-right: -20px;
+}
+#gif11{
+    opacity: 0;
+    transition: 0.4s ease-in;
+    margin-right: -40px;
+}
+#gif12{
+    opacity: 0;
+    transition: 0.4s ease-in;
+   
+}
+.home{
+    width:80px;
+    height: 35px;
+    padding-top: 8px;
+    font-size: medium;
+}
+.library{
+    width:120px;
+    height: 35px;
+    padding-top: 8px;
+    font-size: medium;
+}
+.playlists{
+    width:120px;
+    height: 35px;
+    padding-top: 8px;
+    font-size: medium;
+}
+
+.play2{
+    height: 30px;
+    width: 30px;
+    margin-left: 70px;
+}
+.cover2{
+    /* margin-top: -30px; */
+    margin-right: -2px;
+    margin-left: -2px;
+    height: 200px;
+}
+.cover3{
+    /* margin-top: -30px; */
+    margin-right: -2px;
+    margin-left: -2px;
+    height: 200px;
+}
+.icons2{
+    margin-right: 40px;
+}
+.cover5{
+    /* margin-top: -30px; */
+    margin-right: -2px;
+    margin-left: -2px;
+    height: 220px;  
+}
+.cover6{
+    /* margin-top: -30px; */
+    margin-right: -2px;
+    margin-left: -2px;
+    height: 220px;  
+}
+.ourlogo{
+    color:antiquewhite;
+    font-size: 25px;
+    font-weight:700;
+    
+}
+
+.copyright{
+    color: azure;
+}
+/* .down{
+    height: 30px;
+    width: 30px;
+} */
+.back{
+    width: 99px;
+    height: 30px;
+   padding-top: 8px;
+   font-size: 15px;
+}
+.welcome{
+   
+    font-weight: bold;
+}
