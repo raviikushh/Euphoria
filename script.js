@@ -521,8 +521,27 @@ masterPlay7.addEventListener('click',()=>{
     audioElement6.pause();
     masterPlay6.classList.remove('fa-pause-circle');
     masterPlay6.classList.add('fa-play-circle');
-    gif6.style.opacity = 0;
-
+    gif6.style.opacity = 0;  audioElement12.pause();
+    masterPlay12.classList.remove('fa-pause-circle');
+    masterPlay12.classList.add('fa-play-circle');
+    gif12.style.opacity = 0;
+    audioElement8.pause();
+    masterPlay8.classList.remove('fa-pause-circle');
+    masterPlay8.classList.add('fa-play-circle');
+    gif8.style.opacity = 0;
+    audioElement9.pause();
+    masterPlay9.classList.remove('fa-pause-circle');
+    masterPlay9.classList.add('fa-play-circle');
+    gif9.style.opacity = 0;
+    audioElement10.pause();
+    masterPlay10.classList.remove('fa-pause-circle');
+    masterPlay10.classList.add('fa-play-circle');
+    gif10.style.opacity = 0;
+    audioElement11.pause();
+    masterPlay11.classList.remove('fa-pause-circle');
+    masterPlay11.classList.add('fa-play-circle');
+    gif11.style.opacity = 0;
+    
     if(audioElement7.paused || audioElement7.currentTime<=0){
         audioElement7.play();
         masterPlay7.classList.remove('fa-play-circle');
@@ -587,7 +606,22 @@ masterPlay8.addEventListener('click',()=>{
     audioElement7.pause();
     masterPlay7.classList.remove('fa-pause-circle');
     masterPlay7.classList.add('fa-play-circle');
-    gif7.style.opacity = 0;
+    gif7.style.opacity = 0;  audioElement12.pause();
+    masterPlay12.classList.remove('fa-pause-circle');
+    masterPlay12.classList.add('fa-play-circle');
+    gif12.style.opacity = 0;
+    audioElement9.pause();
+    masterPlay9.classList.remove('fa-pause-circle');
+    masterPlay9.classList.add('fa-play-circle');
+    gif9.style.opacity = 0;
+    audioElement10.pause();
+    masterPlay10.classList.remove('fa-pause-circle');
+    masterPlay10.classList.add('fa-play-circle');
+    gif10.style.opacity = 0;
+    audioElement11.pause();
+    masterPlay11.classList.remove('fa-pause-circle');
+    masterPlay11.classList.add('fa-play-circle');
+    gif11.style.opacity = 0;
 
     if(audioElement8.paused || audioElement8.currentTime<=0){
         audioElement8.play();
@@ -656,7 +690,18 @@ masterPlay9.addEventListener('click',()=>{
     audioElement8.pause();
     masterPlay8.classList.remove('fa-pause-circle');
     masterPlay8.classList.add('fa-play-circle');
-    gif8.style.opacity = 0;
+    gif8.style.opacity = 0;  audioElement12.pause();
+    audioElement10.pause();
+    masterPlay10.classList.remove('fa-pause-circle');
+    masterPlay10.classList.add('fa-play-circle');
+    gif10.style.opacity = 0;  audioElement12.pause();
+    audioElement11.pause();
+    masterPlay11.classList.remove('fa-pause-circle');
+    masterPlay11.classList.add('fa-play-circle');
+    gif11.style.opacity = 0;  audioElement12.pause();
+    masterPlay12.classList.remove('fa-pause-circle');
+    masterPlay12.classList.add('fa-play-circle');
+    gif12.style.opacity = 0;
 
     if(audioElement9.paused || audioElement9.currentTime<=0){
         audioElement9.play();
@@ -730,7 +775,15 @@ masterPlay10.addEventListener('click',()=>{
     audioElement9.pause();
     masterPlay9.classList.remove('fa-pause-circle');
     masterPlay9.classList.add('fa-play-circle');
-    gif9.style.opacity = 0;
+    gif9.style.opacity = 0; 
+     audioElement12.pause();
+    masterPlay12.classList.remove('fa-pause-circle');
+    masterPlay12.classList.add('fa-play-circle');
+    gif12.style.opacity = 0;
+     audioElement11.pause();
+    masterPlay11.classList.remove('fa-pause-circle');
+    masterPlay11.classList.add('fa-play-circle');
+    gif11.style.opacity = 0;
 
     if(audioElement10.paused || audioElement10.currentTime<=0){
         audioElement10.play();
@@ -808,7 +861,10 @@ masterPlay11.addEventListener('click',()=>{
     audioElement10.pause();
     masterPlay10.classList.remove('fa-pause-circle');
     masterPlay10.classList.add('fa-play-circle');
-    gif10.style.opacity = 0;
+    gif10.style.opacity = 0;  audioElement12.pause();
+    masterPlay12.classList.remove('fa-pause-circle');
+    masterPlay12.classList.add('fa-play-circle');
+    gif12.style.opacity = 0;
 
     if(audioElement11.paused || audioElement11.currentTime<=0){
         audioElement11.play();
