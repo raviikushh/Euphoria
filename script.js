@@ -900,9 +900,9 @@ masterPlay12.addEventListener('click',()=>{
     }
     else{
         audioElement12.pause();
-        masterPlay21.classList.remove('fa-pause-circle');
+        masterPlay12.classList.remove('fa-pause-circle');
         masterPlay12.classList.add('fa-play-circle');
-        gif912.style.opacity = 0;
+        gif12.style.opacity = 0;
     }
 })
 //listen event
