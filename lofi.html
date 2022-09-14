@@ -16,7 +16,7 @@
     integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
     crossorigin="anonymous"></script>
 
-  <nav class="navbar navbar-expand-lg sticky-top bg-success ">
+ <!-- <nav class="navbar navbar-expand-lg sticky-top bg-success ">
     <div class="container-fluid">
       <li class="me-auto">
         <img src="img1.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
@@ -60,7 +60,59 @@
         </div>
       </div>
     </div>
+  </nav> -->
+
+<!-- New Nav Bar -->
+
+<nav class="navbar navbar-dark bg-success sticky-top">
+    <div class="container-fluid">
+        <li class="me-auto">
+            <img src="img1.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+        </li>
+        <a class="navbar-brand ourlogo" href="index.html">Euphoria</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-success" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Welcome to Euphoria Music</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div> 
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+                <a class="nav-link active pills1" aria-current="page" href="index.html"><span
+                    class="badge rounded-pill text-bg-warning home">Home</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="lofi.html"><span class="badge rounded-pill text-bg-danger library">Lofi Songs</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="badge rounded-pill text-bg-info playlists">Playlists</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Top 20 in India</a></li>
+                  <li><a class="dropdown-item" href="#">Lofi Songs</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Best DJ Songs</a></li>
+                </ul>
+              </li>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search a song" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+           <div class="mx-2"><button class="btn btn-warning" data-bs-toggle="modal"
+            data-bs-target="#loginModal">Login</button>
+          <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#signupModal">Signup</button>
+        </div>
+        </div>
+      </div>
+    </div>
   </nav>
+
   
    <h1 class="text-center text-light">Coming Soon........</h1>
   <footer class="container fixed-bottom">
