@@ -1,4 +1,4 @@
-console.log("Welcome to Musixx");
+console.log("Welcome to Euphoria Music");
 
 
 let songs = [
@@ -74,7 +74,9 @@ masterPlay.addEventListener('click',()=>{
         masterPlay.classList.add('fa-play-circle');
         gif.style.opacity = 0;
     }
+   
 })
+
 //listen event
 audioElement.addEventListener('timeupdate', ()=>{ 
     // Update Seekbar
@@ -86,6 +88,21 @@ myProgressBar.addEventListener('change', ()=>{
     audioElement.currentTime = myProgressBar.value * audioElement.duration/100;
 })
 
+
+// For AutoPlay Of Next Song
+
+audioElement.addEventListener('ended', ()=>{
+    //pause Current Song
+    audioElement.pause();
+    masterPlay.classList.remove('fa-pause-circle');
+    masterPlay.classList.add('fa-play-circle');
+    gif.style.opacity = 0;
+    //Play Next Song 
+    audioElement5.play();
+    masterPlay5.classList.add('fa-pause-circle');
+    masterPlay5.classList.remove('fa-play-circle');
+    gif5.style.opacity = 1;
+})
 
 // ***************************************************************************************************
 //For Song 2(Mast Nazro se)
@@ -166,6 +183,20 @@ myProgressBar2.addEventListener('change', ()=>{
     audioElement2.currentTime = myProgressBar2.value * audioElement2.duration/100;
 })
 
+// For Autoplay of Next Song 
+
+audioElement2.addEventListener('ended', ()=>{
+    //pause Current Song
+    audioElement2.pause();
+    masterPlay2.classList.remove('fa-pause-circle');
+    masterPlay2.classList.add('fa-play-circle');
+    gif2.style.opacity = 0;
+    //Play Next Song 
+    audioElement3.play();
+    masterPlay3.classList.add('fa-pause-circle');
+    masterPlay3.classList.remove('fa-play-circle');
+    gif3.style.opacity = 1;
+})
 
 // ***********************************************************************************************
 //For Song 3(Tu hi das de)
@@ -247,6 +278,20 @@ myProgressBar3.addEventListener('change', ()=>{
 })
 
 
+// For Autoplay of Next Song 
+
+audioElement3.addEventListener('ended', ()=>{
+    //pause Current Song
+    audioElement3.pause();
+    masterPlay3.classList.remove('fa-pause-circle');
+    masterPlay3.classList.add('fa-play-circle');
+    gif3.style.opacity = 0;
+    //Play Next Song 
+    audioElement.play();
+    masterPlay.classList.add('fa-pause-circle');
+    masterPlay.classList.remove('fa-play-circle');
+    gif.style.opacity = 1;
+})
 
 //*************************************************************************************** *
 //For Song 4 (Har Har Sambhu)
@@ -328,6 +373,21 @@ myProgressBar4.addEventListener('change', ()=>{
 })
 
 
+// For Autoplay of Next Song 
+
+audioElement4.addEventListener('ended', ()=>{
+    //pause Current Song
+    audioElement4.pause();
+    masterPlay4.classList.remove('fa-pause-circle');
+    masterPlay4.classList.add('fa-play-circle');
+    gif4.style.opacity = 0;
+    //Play Next Song 
+    audioElement2.play();
+    masterPlay2.classList.add('fa-pause-circle');
+    masterPlay2.classList.remove('fa-play-circle');
+    gif2.style.opacity = 1;
+})
+
 //***************************************************************************************** */
 //For Song 5(Harleys in Hawaii)
 let audioElement5 = new Audio('song5.mp3');
@@ -408,6 +468,21 @@ myProgressBar5.addEventListener('change', ()=>{
 })
 
 
+// For Autoplay of Next Song 
+
+audioElement5.addEventListener('ended', ()=>{
+    //pause Current Song
+    audioElement5.pause();
+    masterPlay5.classList.remove('fa-pause-circle');
+    masterPlay5.classList.add('fa-play-circle');
+    gif5.style.opacity = 0;
+    //Play Next Song 
+    audioElement6.play();
+    masterPlay6.classList.add('fa-pause-circle');
+    masterPlay6.classList.remove('fa-play-circle');
+    gif6.style.opacity = 1;
+})
+
 // *********************************************************************************************
 //For Song 6(Closer)
 let audioElement6 = new Audio('song6.mp3');
@@ -485,6 +560,21 @@ audioElement6.addEventListener('timeupdate', ()=>{
 
 myProgressBar6.addEventListener('change', ()=>{
     audioElement6.currentTime = myProgressBar6.value * audioElement6.duration/100;
+})
+
+// For Autoplay of Next Song 
+
+audioElement6.addEventListener('ended', ()=>{
+    //pause Current Song
+    audioElement6.pause();
+    masterPlay6.classList.remove('fa-pause-circle');
+    masterPlay6.classList.add('fa-play-circle');
+    gif6.style.opacity = 0;
+    //Play Next Song 
+    audioElement7.play();
+    masterPlay7.classList.add('fa-pause-circle');
+    masterPlay7.classList.remove('fa-play-circle');
+    gif7.style.opacity = 1;
 })
 
 
@@ -567,6 +657,21 @@ myProgressBar7.addEventListener('change', ()=>{
 })
 
 
+// For Autoplay of Next Song 
+
+audioElement7.addEventListener('ended', ()=>{
+    //pause Current Song
+    audioElement7.pause();
+    masterPlay7.classList.remove('fa-pause-circle');
+    masterPlay7.classList.add('fa-play-circle');
+    gif7.style.opacity = 0;
+    //Play Next Song 
+    audioElement8.play();
+    masterPlay8.classList.add('fa-pause-circle');
+    masterPlay8.classList.remove('fa-play-circle');
+    gif8.style.opacity = 1;
+})
+
 // *******************************************************************************************************
 
 //For Song 8 (Toh Fir Aao)
@@ -648,6 +753,21 @@ myProgressBar8.addEventListener('change', ()=>{
 })
 
 
+// For Autoplay of Next Song 
+
+audioElement8.addEventListener('ended', ()=>{
+    //pause Current Song
+    audioElement8.pause();
+    masterPlay8.classList.remove('fa-pause-circle');
+    masterPlay8.classList.add('fa-play-circle');
+    gif8.style.opacity = 0;
+    //Play Next Song 
+    audioElement9.play();
+    masterPlay9.classList.add('fa-pause-circle');
+    masterPlay9.classList.remove('fa-play-circle');
+    gif9.style.opacity = 1;
+})
+
 // *************************************************************************************************
 
 //For Song 9 (Gale Lag Ja )
@@ -727,6 +847,21 @@ myProgressBar9.addEventListener('change', ()=>{
     audioElement9.currentTime = myProgressBar9.value * audioElement9.duration/100;
 })
 
+
+// For Autoplay of Next Song 
+
+audioElement9.addEventListener('ended', ()=>{
+    //pause Current Song
+    audioElement9.pause();
+    masterPlay9.classList.remove('fa-pause-circle');
+    masterPlay9.classList.add('fa-play-circle');
+    gif9.style.opacity = 0;
+    //Play Next Song 
+    audioElement10.play();
+    masterPlay10.classList.add('fa-pause-circle');
+    masterPlay10.classList.remove('fa-play-circle');
+    gif10.style.opacity = 1;
+})
 
 // **********************************************************************************************\
 
@@ -810,6 +945,21 @@ myProgressBar10.addEventListener('change', ()=>{
 })
 
 
+// For Autoplay of Next Song 
+
+audioElement10.addEventListener('ended', ()=>{
+    //pause Current Song
+    audioElement10.pause();
+    masterPlay10.classList.remove('fa-pause-circle');
+    masterPlay10.classList.add('fa-play-circle');
+    gif10.style.opacity = 0;
+    //Play Next Song 
+    audioElement11.play();
+    masterPlay11.classList.add('fa-pause-circle');
+    masterPlay11.classList.remove('fa-play-circle');
+    gif11.style.opacity = 1;
+})
+
 // ************************************************************************************************
 
 // For song 11 (Uska Hi Bana)
@@ -888,6 +1038,22 @@ audioElement11.addEventListener('timeupdate', ()=>{
 
 myProgressBar11.addEventListener('change', ()=>{
     audioElement11.currentTime = myProgressBar11.value * audioElement11.duration/100;
+})
+
+
+// For Autoplay of Next Song 
+
+audioElement11.addEventListener('ended', ()=>{
+    //pause Current Song
+    audioElement11.pause();
+    masterPlay11.classList.remove('fa-pause-circle');
+    masterPlay11.classList.add('fa-play-circle');
+    gif11.style.opacity = 0;
+    //Play Next Song 
+    audioElement12.play();
+    masterPlay12.classList.add('fa-pause-circle');
+    masterPlay12.classList.remove('fa-play-circle');
+    gif12.style.opacity = 1;
 })
 
 
@@ -972,6 +1138,16 @@ myProgressBar12.addEventListener('change', ()=>{
     audioElement12.currentTime = myProgressBar12.value * audioElement12.duration/100;
 })
 
+// Pause After Song Ended
+
+audioElement12.addEventListener('ended', ()=>{
+    //pause Current Song
+    audioElement12.pause();
+    masterPlay12.classList.remove('fa-pause-circle');
+    masterPlay12.classList.add('fa-play-circle');
+    gif12.style.opacity = 0;
+   
+})
 
 // ****************************************************************************************
 //For Playlist
