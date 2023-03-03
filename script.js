@@ -1,5 +1,7 @@
 console.log("Welcome to Euphoria Music");
 
+alert("Euphoria 2.0 is live now access it from menu section")
+
 
 let songs = [
     {songName:"Punjabiyan di dhee" ,filePath: "song1.mp3", coverPath: "cover1.jpg"},
