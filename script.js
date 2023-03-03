@@ -1,6 +1,6 @@
 console.log("Welcome to Euphoria Music");
 
-alert("Euphoria 2.0 is live now access it from menu section")
+alert("Euphoria 2.0 is live now access it from menu bar")
 
 
 let songs = [
